@@ -2,22 +2,29 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline6">1. Un problème de décomposition de domaine</a>
+<li><a href="#orgheadline1">1. Pour l'évaluation</a></li>
+<li><a href="#orgheadline7">2. Un problème de décomposition de domaine</a>
 <ul>
-<li><a href="#orgheadline1">1.1. Objectif final, très ambitieux.</a></li>
-<li><a href="#orgheadline2">1.2. Première partie : recherche de resources, documentation</a></li>
-<li><a href="#orgheadline3">1.3. Deuxième partie : programmation dans un cas simplifié</a></li>
-<li><a href="#orgheadline4">1.4. Troisième partie : le cas général</a></li>
-<li><a href="#orgheadline5">1.5. refs</a></li>
+<li><a href="#orgheadline2">2.1. Objectif final, très ambitieux.</a></li>
+<li><a href="#orgheadline3">2.2. Première partie : recherche de resources, documentation</a></li>
+<li><a href="#orgheadline4">2.3. Deuxième partie : programmation dans un cas simplifié</a></li>
+<li><a href="#orgheadline5">2.4. Troisième partie : le cas général</a></li>
+<li><a href="#orgheadline6">2.5. refs</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-# Un problème de décomposition de domaine<a id="orgheadline6"></a>
+# Pour l'évaluation<a id="orgheadline1"></a>
 
-## Objectif final, très ambitieux.<a id="orgheadline1"></a>
+-   **Prendre 10 min à chaque fin de séance pour écrire ce qu'on a fait dans le
+    fichier [./Rapports.md](./Rapports.md)**
+-   le rapport terminal doit être rédiger en Latex dans le répertoire [./rapports](rapports)
+
+# Un problème de décomposition de domaine<a id="orgheadline7"></a>
+
+## Objectif final, très ambitieux.<a id="orgheadline2"></a>
 
 On cherche à résoudre une équation du type \( - \Delta u + \alpha u = f\) dans
 l'ouvert \(\Omega = (0,1)^d\) avec \(u = 0\) au bord, en utilisant des méthodes de
@@ -26,7 +33,7 @@ décomposition de domaine.
 On cherchera en particulier à savoir à quelle vitesse les algorithmes
 convergent, lorsqu'ils convergent.
 
-## Première partie : recherche de resources, documentation<a id="orgheadline2"></a>
+## Première partie : recherche de resources, documentation<a id="orgheadline3"></a>
 
 1.  Trouver et synthétiser de la documentation sur le type d'équation dont il
     s'agit: une équation elliptique linéaire, à coefficients constant, avec
@@ -35,10 +42,10 @@ convergent, lorsqu'ils convergent.
     équation.
 3.  Décrire le système linéaire qui en découle. Quelles sont les méthodes
     numériques adaptées à la résolution de ce système linéaire ?
-4.  Trouver et décrire les méthodes de décomposition de domaine de type méthode
+4.  Trouver et décrire des méthodes de décomposition de domaine de type méthode
     de Schwarz avec recouvrement pour ce problème.
 
-## Deuxième partie : programmation dans un cas simplifié<a id="orgheadline3"></a>
+## Deuxième partie : programmation dans un cas simplifié<a id="orgheadline4"></a>
 
 On se place pour cette partie dans le cas de l'équation en dimension \(d=1\),
 c'est à dire sur l'intervalle \(\Omega = (0,1)\).
@@ -54,7 +61,7 @@ c'est à dire sur l'intervalle \(\Omega = (0,1)\).
 3.  Programmer la résolution du problème, et vérifier cette implémentation à
     l'aide des tests de la question 2.
 
-## Troisième partie : le cas général<a id="orgheadline4"></a>
+## Troisième partie : le cas général<a id="orgheadline5"></a>
 
 On va généraliser le code produit dans la partie précédente dans deux direction:
 dimension spatiale \(2\), et décomposition de domaine.
@@ -73,6 +80,6 @@ dimension spatiale \(2\), et décomposition de domaine.
 5.  Implémenter cette résolution, d'abord sur un problème en dimension \(d=2\),
     puis \(d=2\).
 
-## refs<a id="orgheadline5"></a>
+## refs<a id="orgheadline6"></a>
 
 Voir le répertoire [./refs](./refs)
